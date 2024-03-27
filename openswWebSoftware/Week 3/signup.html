@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <form>
+      <div style="margin-bottom: 20px;">
+        <label for="NewId">Account ID:</label><br/>
+        <input type="text" id="NewId"><br/>
+        <label for="NewPw">Password:</label><br/>
+        <input type="text" id="NewPw"><br/>
+      </div>
+      <fieldset style="margin-bottom: 20px;">
+        <legend>Personal Information</legend>
+        <label for="FirstName">First name:</label><br/>
+        <input type="text" id="FirstName"><br/>
+        <label for="LastName">Last name:</label><br/>
+        <input type="text" id="LastName" style="margin-bottom: 15px;"><br/>
+
+        <label for="Gender">Gender</label>
+        <div id="Gender">
+          <input type="radio" id="Male" name="gdr">
+          <label for="Male">Male</label>
+          <input type="radio" id="Female" name="gdr">
+          <label for="Female">Female</label>
+        </div>
+      </fieldset>
+      <fieldset style="margin-bottom: 20px;">
+        <legend>Current position</legend>
+        <div>
+          <input id="FrontEnd" type="checkbox">
+          <label for="FrontEnd">Front-end developer</label><br/>
+          <input id="BackEnd" type="checkbox">
+          <label for="BackEnd">Back-end developer</label><br/>
+          <input id="Infrastructure" type="checkbox">
+          <label for="Infrastructure">Infrastructure developer</label><br/>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button>Reset</button>
+      <button>Cancle</button>
+    </form>
+    <div style="margin-top: 20px;">
+      <a href="./home.html">Go to home</a>
+    </div>
+  </body>
+</html>
