@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Java Script Controls</h1>
+    <p>Number to humanize</p>
+
+    <script>
+      const humanize = (x) => {
+        if (x % 100 >= 11 && x % 100 <= 13) {
+          return x + "th";
+        }
+        if (x % 10 == 1) {
+          return x + "st";
+        } else if (x % 10 == 2) {
+          return x + "nd";
+        } else if (x % 10 == 3) {
+          return x + "rd";
+        } else {
+          return x + "th";
+        }
+      };
+
+      document.write(humanize(1) + "<br/>");
+
+      document.write(humanize(8) + "<br/>");
+
+      document.write(humanize(301) + "<br/>");
+
+      document.write(humanize(402) + "<br/>");
+
+      document.write(humanize(711) + "<br/>");
+    </script>
+  </body>
+</html>

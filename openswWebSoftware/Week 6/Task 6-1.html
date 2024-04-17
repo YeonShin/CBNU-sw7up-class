@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const squaring = (x) => {
+      return(Math.pow(x, 2));
+    }
+    const half = (x) => {
+      return(x/2);
+    }
+    const percent = (x, y) => {
+      return(x/y*100);
+
+    }
+    const area = (x) => {
+      return(x*x*Math.PI);
+    }
+  </script>
+  <h1>Java Script Function</h1>
+  
+  <script>
+    document.write("The result of squaring the number " + 3 + " is " + squaring(3) + "<br/>");
+    document.write("Half of " + 5 + " is " + half(5) + "<br/>");
+    document.write(5 + " is " + percent(5, 10) + "% of " + 10 + "<br/>");
+    document.write("The result of squaring the number " + 2 + " is " + squaring(2) + "<br/>");
+    document.write("The area of circle with radius " + 2 + " is " + area(2) + "<br/>");
+    document.write("<br/>Do crazy stuff<br/>");
+    document.write("Half of " + 5 + " is " + half(5) + "<br/>");
+    document.write("The result of squaring the number " + 2.5 + " is " + squaring(2.5) + "<br/>");
+    document.write("The result of squaring the number " + 6.25 + " is " + squaring(6.25) + "<br/>");
+    document.write("The area of circle with radius " + 6.25 + " is " + area(6.25) + "<br/>");
+    document.write(6.25 + " is " + percent(6.25, area(6.25)) + "% of " + area(6.25) + "<br/>");
+  </script>
+
+</body>
+</html>

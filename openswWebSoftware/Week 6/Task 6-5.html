@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div>
+    Input: 
+    <input type="text" name="stck" id="input_stack">
+    <button type="button" id="stackBtn" onclick="myPush()">Stack</button>
+  </div>
+  <br>
+  <button type="button" id="showBtn" onclick="show()">Show</button>
+  <script>
+    var myStack = [];
+
+    const myPush = () => {
+      var value = document.getElementById("input_stack").value;
+      myStack.push(value);
+      document.getElementById("input_stack").value = "";
+    }
+
+    const show = () => {
+      for(var i = 0; i < myStack.length ; i++) {
+        document.write(myStack[i] + "<br/>");
+      }
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Java Script String</h1>
+    <p>Original String:</p>
+    <p id="og_string"></p>
+    <p>Replaced String:</p>
+    <p id="re_string"></p>
+    <script>
+      var text = "best";
+      document.getElementById("og_string").innerHTML = text;
+      document.getElementById("re_string").innerHTML = text.replace(
+        "b",
+        "t"
+      );
+    </script>
+  </body>
+</html>
