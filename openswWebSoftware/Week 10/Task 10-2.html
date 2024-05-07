@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>The Document Object</h2>
+  <h2>DOM innerHTML property</h2>
+  <p>JavaScript DOM is fun to learn</p>
+  <input type="button" value="Try it" id="btn">
+  <h2 id="content2"></h2>
+
+  <script>
+    var btn = document.querySelector("#btn");
+    btn.addEventListener("click", function() {
+      var content = document.querySelector("p").innerText;
+      document.querySelector("#content2").innerHTML = content;
+      document.querySelector("#content2").style.color = "green";
+      
+    })
+  </script>
+</body>
+</html>

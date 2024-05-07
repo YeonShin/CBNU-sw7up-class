@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table, td, tr {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <input type="button" value="Change" id="chgBtn">
+  <table>
+    <tr>
+      <td><img src="test1.jpg" alt="test1" class="table_image"></td>
+      <td><img src="test2.jpg" alt="test2" class="table_image"></td>
+      <td><img src="test3.jpg" alt="test3" class="table_image"></td>
+      <td><img src="test4.jpg" alt="test4" class="table_image"></td>
+    </tr>
+  </table>
+
+  <script>
+    document.getElementById("chgBtn").addEventListener("click", function() {
+      var images = document.getElementsByClassName("table_image");
+      
+      for(var i=2; i<images.length; i++) {
+        images[i].src = "test5.jpg";
+      }
+    });
+  </script>
+</body>
+</html>
