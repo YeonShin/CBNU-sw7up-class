@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .color-box {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #colorValue {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="color-box" style="background-color: orange;"></div>
+    <div class="color-box" style="background-color: pink;"></div>
+    <div class="color-box" style="background-color: lightgreen;"></div>
+    <div class="color-box" style="background-color: red;"></div>
+    <p id="colorValue">The computed background-color property value of this DIV element is: </p>
+
+    <script>
+        $(document).ready(function(){
+            $('.color-box').click(function(){
+                let bgColor = $(this).css('background-color');
+                $('#colorValue').text('The computed background-color property value of this DIV element is: ' + bgColor);
+            });
+        });
+    </script>
+</body>
+</html>
