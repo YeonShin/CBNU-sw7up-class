@@ -18,9 +18,6 @@ def connect_db():
     print(f"데이터베이스 연결에 실패했습니다: {e}")
     return None
 
-
-
-
 def select(mydb):
     try:
         cur = mydb.cursor()
@@ -57,7 +54,7 @@ def insert(mydb):
       for x in select_all_result:
         print(x)
     else:
-      print("미구현")
+      print('Book 테이블의 데이터 삽입이 가능합니다.\n')
   except Error as e:
     print(f"데이터 삽입 중 오류 발생: {e}")
           
@@ -81,7 +78,7 @@ def delete(mydb):
       for x in select_result:
         print(x)
     else:
-      print('미구현')
+      print('Book 테이블의 데이터 삭제이 가능합니다.\n')
   except Error as e:
     print(f"데이터 삽입 중 오류 발생: {e}")
     
